@@ -12,10 +12,6 @@
 		"encryption",
 		"password-security"
 	],
-	"bin": {
-		"poor-mans-password-manager": "./distribution/cli.js",
-		"pmpm": "./distribution/cli.js"
-	},
 	"homepage": "https://github.com/iamnapo/poor-mans-password-manager#readme",
 	"bugs": {
 		"url": "https://github.com/iamnapo/poor-mans-password-manager/issues"
@@ -32,10 +28,12 @@
 	},
 	"type": "module",
 	"exports": "./distribution/cli.js",
-	"types": "./distribution/cli.d.ts",
+	"bin": {
+		"pmpm": "./distribution/cli.js",
+		"poor-mans-password-manager": "./distribution/cli.js"
+	},
 	"files": [
-		"distribution/cli.js",
-		"distribution/cli.d.ts"
+		"distribution/cli.js"
 	],
 	"scripts": {
 		"build": "tsc",
@@ -46,6 +44,9 @@
 	"eslintConfig": {
 		"extends": "iamnapo/typescript",
 		"ignorePatterns": "distribution"
+	},
+	"dependencies": {
+		"meow": "^13.2.0"
 	},
 	"devDependencies": {
 		"@iamnapo/tsconfig": "^6.0.0",
@@ -61,8 +62,5 @@
 	"publishConfig": {
 		"access": "public",
 		"provenance": true
-	},
-	"dependencies": {
-		"meow": "^13.2.0"
 	}
 }
