@@ -4,6 +4,8 @@
 
 [![build](https://badges.iamnapo.me/ci/iamnapo/poor-mans-password-manager)](https://github.com/iamnapo/poor-mans-password-manager/actions) [![npm](https://badges.iamnapo.me/npm/@iamnapo/poor-mans-password-manager)](https://www.npmjs.com/package/@iamnapo/poor-mans-password-manager)
 
+<sup><em>Inspired from a discussion with @mateuadsuara</em></sup>
+
 ## Install
 
 ```sh
