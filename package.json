@@ -1,6 +1,6 @@
 {
 	"name": "@iamnapo/poor-mans-password-manager",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Simple CLI to turn memorable sentences into secure passwords",
 	"keywords": [
 		"password",
