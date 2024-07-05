@@ -33,8 +33,8 @@ const cli = meow(
 	},
 );
 
-if (cli.input.length === 0) {
-	console.error("Specify a sentence to create a password from");
+if (cli.input.length !== 1) {
+	console.error("Please provide a (single) sentence to generate a password from.");
 	process.exit(1);
 }
 
