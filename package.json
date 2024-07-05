@@ -1,0 +1,68 @@
+{
+	"name": "@iamnapo/poor-mans-password-manager",
+	"version": "0.0.0",
+	"description": "Simple CLI to turn memorable sentences into secure passwords",
+	"keywords": [
+		"password",
+		"manager",
+		"CLI",
+		"security",
+		"password-generator",
+		"secure-password",
+		"encryption",
+		"password-security"
+	],
+	"bin": {
+		"poor-mans-password-manager": "./distribution/cli.js",
+		"pmpm": "./distribution/cli.js"
+	},
+	"homepage": "https://github.com/iamnapo/poor-mans-password-manager#readme",
+	"bugs": {
+		"url": "https://github.com/iamnapo/poor-mans-password-manager/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/iamnapo/poor-mans-password-manager.git"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Napoleon-Christos Oikonomou",
+		"email": "napoleonoikon@gmail.com",
+		"url": "https://iamnapo.me"
+	},
+	"type": "module",
+	"exports": "./distribution/cli.js",
+	"types": "./distribution/cli.d.ts",
+	"files": [
+		"distribution/cli.js",
+		"distribution/cli.d.ts"
+	],
+	"scripts": {
+		"build": "tsc",
+		"lint": "eslint . --ext .ts --cache",
+		"prepare": "npm run build",
+		"test": "npm run lint && npm run build && node --test distribution/tests/*.js"
+	},
+	"eslintConfig": {
+		"extends": "iamnapo/typescript",
+		"ignorePatterns": "distribution"
+	},
+	"devDependencies": {
+		"@iamnapo/tsconfig": "^6.0.0",
+		"@types/node": "^20.14.10",
+		"eslint": "^8.57.0",
+		"eslint-config-iamnapo": "^36.0.0",
+		"execa": "^9.3.0",
+		"typescript": "^5.5.3"
+	},
+	"engines": {
+		"node": ">=20"
+	},
+	"publishConfig": {
+		"access": "public",
+		"provenance": true
+	},
+	"dependencies": {
+		"meow": "^13.2.0"
+	}
+}
